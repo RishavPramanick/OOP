@@ -26,6 +26,7 @@ class stack:
     def pop(self):
         if self.isEmpty():
             print("Stack Underflow")
+            return None
         else:
             data = self.body[self.top]
             self.body[self.top] = None
