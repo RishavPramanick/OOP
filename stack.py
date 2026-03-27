@@ -20,14 +20,15 @@ class stack:
             print("Stack Overflow")
         else:
             self.top +=1
-            self.body[self.top]= data
+            self.body[self.top] = data
             print(f'{data} Pushed')
 
     def pop(self):
         if self.isEmpty():
             print("Stack Underflow")
         else:
-            data = self.body.pop()
+            data = self.body[self.top]
+            self.body[self.top] = None
             self.top -= 1
             print(f'{data} Popped')
             return data
