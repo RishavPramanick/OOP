@@ -19,8 +19,8 @@ class stack:
         if self.isFull():
             print("Stack Overflow")
         else:
-            self.body.append(data)
             self.top +=1
+            self.body[self.top]= data
             print(f'{data} Pushed')
 
     def pop(self):
