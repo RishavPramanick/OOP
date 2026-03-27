@@ -1,4 +1,4 @@
-class stack:
+class Stack:
 
     def __init__(self, length):
         self.top = -1
