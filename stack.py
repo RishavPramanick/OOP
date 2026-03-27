@@ -33,10 +33,10 @@ class stack:
             print(f'{data} Popped')
             return data
 
-    def peek(self, pos):
+    def peak(self, position):
         if self.isEmpty():
             return None
-        if pos > self.top + 1:
+        if position <= 0 or positon > self.top + 1:
             print("Position out of Stack!")
             return None
-        return self.body[self.top - pos + 1]
+        return self.body[self.top - position + 1]
