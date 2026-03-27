@@ -32,7 +32,7 @@ class stack:
             print(f'{data} Popped')
             return data
 
-    def peak(self, pos):
+    def peek(self, pos):
         if self.isEmpty():
             return None
         if pos > self.top + 1:
