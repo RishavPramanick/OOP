@@ -3,7 +3,7 @@ class stack:
     def __init__(self, length):
         self.top = -1
         self.length = length
-        self.body = []
+        self.body = [None] * length
 
     def isFull(self):
         if self.top == self.length - 1:
